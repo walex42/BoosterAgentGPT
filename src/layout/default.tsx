@@ -11,9 +11,9 @@ const DefaultLayout = (props: LayoutProps) => {
   const description =
     "Assemble, configure, and deploy autonomous AI Agents in your browser.";
   return (
-    <div className="flex min-h-screen min-h-screen flex-col bg-gradient-to-b from-[#2B2B2B] to-[#1F1F1F]">
+    <div className="flex min-h-screen flex-col bg-gradient-to-b from-[#2B2B2B] to-[#1F1F1F]">
       <Head>
-        <title>AgentGPT</title>
+        <title>Booster</title>
         <meta name="description" content={description} />
         <meta name="twitter:site" content="@AgentGPT" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -45,7 +45,7 @@ const DefaultLayout = (props: LayoutProps) => {
           name="google-site-verification"
           content="sG4QDkC8g2oxKSopgJdIe2hQ_SaJDaEaBjwCXZNkNWA"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
         <Script
           src="https://plausible.io/js/script.js"
           strategy="afterInteractive"

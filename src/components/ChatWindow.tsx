@@ -90,16 +90,7 @@ const ChatWindow = ({ messages, children, className }: ChatWindowProps) => {
                 message={{
                   type: "system",
                   value:
-                    "> Create an agent by adding a name / goal, and hitting deploy!",
-                }}
-              />
-            </Expand>
-            <Expand delay={0.9} type="spring">
-              <ChatMessage
-                message={{
-                  type: "system",
-                  value:
-                    "📢 Please first provide your own OpenAI API key via the settings tab!",
+                    "Create your manager by setting its goals and clicking delpoy!",
                 }}
               />
             </Expand>
@@ -147,35 +138,8 @@ const MacWindowHeader = () => {
 
   return (
     <div className="flex items-center gap-1 rounded-t-3xl p-3">
-      <PopIn delay={0.4}>
-        <div className="h-3 w-3 rounded-full bg-red-500" />
-      </PopIn>
-      <PopIn delay={0.5}>
-        <div className="h-3 w-3 rounded-full bg-yellow-500" />
-      </PopIn>
-      <PopIn delay={0.6}>
-        <div className="h-3 w-3 rounded-full bg-green-500" />
-      </PopIn>
       <div className="flex flex-grow"></div>
-      <PopIn delay={0.7}>
-        <div
-          className="mr-1 flex cursor-pointer items-center gap-2 rounded-full border-2 border-white/30 p-1 px-2 text-xs hover:bg-white/10"
-          onClick={(): void => saveElementAsImage(messageListId)}
-        >
-          <FaSave size={12} />
-          <p className="font-mono">Save</p>
-        </div>
-      </PopIn>
-
-      <PopIn delay={0.8}>
-        <div
-          className="mr-1 flex cursor-pointer items-center gap-2 rounded-full border-2 border-white/30 p-1 px-2 text-xs hover:bg-white/10"
-          onClick={(): void => copyElementText(messageListId)}
-        >
-          <FaClipboard size={12} />
-          <p className="font-mono">Copy</p>
-        </div>
-      </PopIn>
+      
     </div>
   );
 };

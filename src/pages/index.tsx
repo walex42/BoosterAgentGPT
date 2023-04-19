@@ -83,14 +83,6 @@ const Home: NextPage = () => {
         show={showHelpDialog}
         close={() => setShowHelpDialog(false)}
       />
-      <SettingsDialog
-        customApiKey={customApiKey}
-        setCustomApiKey={setCustomApiKey}
-        customModelName={customModelName}
-        setCustomModelName={setCustomModelName}
-        show={showSettingsDialog}
-        close={() => setShowSettingsDialog(false)}
-      />
       <main className="flex h-screen w-screen flex-row">
         <Drawer
           showHelp={() => setShowHelpDialog(true)}
@@ -110,20 +102,8 @@ const Home: NextPage = () => {
             >
               <div className="flex flex-row items-start shadow-2xl">
                 <span className="text-4xl font-bold text-[#C0C0C0] xs:text-5xl sm:text-6xl">
-                  Agent
+                  Booster
                 </span>
-                <span className="text-4xl font-bold text-white xs:text-5xl sm:text-6xl">
-                  GPT
-                </span>
-                <PopIn delay={0.5} className="sm:absolute sm:right-0 sm:top-2">
-                  <Badge>Beta 🚀</Badge>
-                </PopIn>
-              </div>
-              <div className="mt-1 text-center font-mono text-[0.7em] font-bold text-white">
-                <p>
-                  Assemble, configure, and deploy autonomous AI Agents in your
-                  browser.
-                </p>
               </div>
             </div>
 
@@ -136,28 +116,26 @@ const Home: NextPage = () => {
                 <Input
                   left={
                     <>
-                      <FaRobot />
                       <span className="ml-2">Name:</span>
                     </>
                   }
                   value={name}
                   disabled={agent != null}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="AgentGPT"
+                  placeholder="Task Name"
                 />
               </Expand>
               <Expand delay={1.3}>
                 <Input
                   left={
                     <>
-                      <FaStar />
                       <span className="ml-2">Goal:</span>
                     </>
                   }
                   disabled={agent != null}
                   value={goalInput}
                   onChange={(e) => setGoalInput(e.target.value)}
-                  placeholder="Make the world a better place."
+                  placeholder="Manager Goals"
                 />
               </Expand>
             </div>

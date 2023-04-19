@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import {
   FaBars,
   FaCog,
-  FaDiscord,
-  FaGithub,
-  FaQuestionCircle,
+  FaGlobe,
+  FaArrowsRotate,
   FaRobot,
   FaTwitter,
 } from "react-icons/fa";
-import { BiPlus } from "react-icons/bi";
+import { BiRotateLeft } from "react-icons/bi";
 import FadeOut from "./motions/FadeOut";
 import { AnimatePresence } from "framer-motion";
 import clsx from "clsx";
@@ -49,9 +48,9 @@ const Drawer = ({
           <div className="mb-2 flex justify-center gap-2">
             <DrawerItem
               className="flex-grow"
-              icon={<BiPlus />}
+              icon={<BiRotateLeft />}
               border
-              text="New Agent"
+              text="Restart"
               onClick={() => location.reload()}
             />
             <button
@@ -64,14 +63,13 @@ const Drawer = ({
           <AnimatePresence>
             {agents.map((agent, index) => (
               <FadeOut key={`${index}-${agent}`}>
-                <DrawerItem icon={<FaRobot />} text={agent} />
+                <DrawerItem icon={<FaRobot />} text= "Restart" />
               </FadeOut>
             ))}
 
             {agents.length === 0 && (
               <div>
-                Click the above button to restart. In the future, this will be a
-                list of your deployed agents!
+                Click the above button to restart.
               </div>
             )}
           </AnimatePresence>
@@ -84,28 +82,17 @@ const Drawer = ({
           {/*  text="Clear Agents"*/}
           {/*  onClick={() => setAgents([])}*/}
           {/*/>*/}
-          <DrawerItem
-            icon={<FaQuestionCircle />}
-            text="Help"
-            onClick={showHelp}
-          />
           <DrawerItem icon={<FaCog />} text="Settings" onClick={showSettings} />
           <DrawerItem
-            icon={<FaDiscord />}
-            text="Discord"
-            href="https://discord.gg/jdSBAnmdnY"
+            icon={<FaGlobe />}
+            text="Website"
+            href="https://www.usebooster.ai/"
             target="_blank"
           />
           <DrawerItem
             icon={<FaTwitter />}
             text="Twitter"
-            href="https://twitter.com/asimdotshrestha/status/1644883727707959296"
-            target="_blank"
-          />
-          <DrawerItem
-            icon={<FaGithub />}
-            text="GitHub"
-            href="https://github.com/reworkd/AgentGPT"
+            href="https://twitter.com/booster_ai"
             target="_blank"
           />
         </div>
@@ -137,7 +124,7 @@ const DrawerItem = (props: DrawerItemProps) => {
     return (
       <a
         className={clsx(
-          "flex cursor-pointer flex-row items-center rounded-md rounded-md p-2 hover:bg-white/5",
+          "flex cursor-pointer flex-row items-center rounded-md p-2 hover:bg-white/5",
           border && "border-[1px] border-white/20",
           `${className || ""}`
         )}
@@ -154,7 +141,7 @@ const DrawerItem = (props: DrawerItemProps) => {
       <button
         type='button'
         className={clsx(
-          "flex cursor-pointer flex-row items-center rounded-md rounded-md p-2 hover:bg-white/5",
+          "flex cursor-pointer flex-row items-center rounded-md p-2 hover:bg-white/5",
           border && "border-[1px] border-white/20",
           `${className || ""}`
         )}
