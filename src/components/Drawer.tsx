@@ -3,7 +3,6 @@ import {
   FaBars,
   FaCog,
   FaGlobe,
-  FaArrowsRotate,
   FaRobot,
   FaTwitter,
 } from "react-icons/fa";
