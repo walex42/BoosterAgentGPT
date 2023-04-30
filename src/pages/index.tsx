@@ -15,6 +15,8 @@ import Expand from "../components/motions/expand";
 import HelpDialog from "../components/HelpDialog";
 import SettingsDialog from "../components/SettingsDialog";
 import { TaskWindow } from "../components/TaskWindow";
+import { Link } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom'
 
 const Home: NextPage = () => {
   const [name, setName] = React.useState<string>("");

@@ -10,6 +10,9 @@ import { BiRotateLeft } from "react-icons/bi";
 import FadeOut from "./motions/FadeOut";
 import { AnimatePresence } from "framer-motion";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
+import { useRouter } from 'next/router';
+
 
 const Drawer = ({
   showHelp,
@@ -20,6 +23,11 @@ const Drawer = ({
 }) => {
   const [showDrawer, setShowDrawer] = useState(false);
   const [agents, setAgents] = React.useState<string[]>([]);
+  const router = useRouter();
+
+  const handleLoginClick = () => {
+    router.push('/login');
+  };
 
   const toggleDrawer = () => {
     setShowDrawer((prevState) => !prevState);
@@ -94,6 +102,7 @@ const Drawer = ({
             href="https://twitter.com/booster_ai"
             target="_blank"
           />
+          <button onClick={handleLoginClick}>Log In</button>
         </div>
       </div>
     </>
