@@ -40,12 +40,12 @@ export default function SettingsDialog({
     >
       <div className="text-md relative flex-auto p-2 leading-relaxed">
         <p className="mb-3">
-          Welcome to AgentGPT! We&apos;re receiving traffic far higher than our
+          Welcome to Booster! We&apos;re receiving traffic far higher than our
           small team is able to provide for at the moment.
         </p>
         <p className="mb-3">
           Because of this, we momentarily ask that users utilize their own
-          OpenAI API key for AgentGPT.{" "}
+          OpenAI API key for Booster.{" "}
           <em>
             This will only be used in the current browser session and not stored
             anywhere.

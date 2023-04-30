@@ -15,9 +15,9 @@ const DefaultLayout = (props: LayoutProps) => {
       <Head>
         <title>Booster</title>
         <meta name="description" content={description} />
-        <meta name="twitter:site" content="@AgentGPT" />
+        <meta name="twitter:site" content="@booster_ai" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AgentGPT 🤖" />
+        <meta name="twitter:title" content="Booster 🤖" />
         <meta name="twitter:description" content={description} />
         <meta
           name="twitter:image"
@@ -27,7 +27,7 @@ const DefaultLayout = (props: LayoutProps) => {
         <meta name="twitter:image:height" content="640" />
         <meta
           property="og:title"
-          content="AgentGPT: Autonomous AI in your browser 🤖"
+          content="Booster: Autonomous AI in your browser 🤖"
         />
         <meta
           property="og:description"
