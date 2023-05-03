@@ -42,11 +42,6 @@ const DefaultLayout = (props: LayoutProps) => {
         <meta property="og:image:height" content="640" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/logo.png" />
-        <Script
-          src="https://plausible.io/js/script.js"
-          strategy="afterInteractive"
-          data-domain="agentgpt.reworkd.ai"
-        />
       </Head>
       <DottedGridBackground>{props.children}</DottedGridBackground>
     </div>
