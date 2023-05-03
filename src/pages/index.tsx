@@ -81,10 +81,6 @@ const Home: NextPage = () => {
 
   return (
     <DefaultLayout>
-      <HelpDialog
-        show={showHelpDialog}
-        close={() => setShowHelpDialog(false)}
-      />
       <main className="flex h-screen w-screen flex-row">
         <Drawer
           showHelp={() => setShowHelpDialog(true)}
