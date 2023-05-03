@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const DefaultLayout = (props: LayoutProps) => {
   const description =
-    "Assemble, configure, and deploy autonomous AI Agents in your browser.";
+    "Use Booster's AI Agent to help manage your career.";
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-[#2B2B2B] to-[#1F1F1F]">
       <Head>
@@ -21,22 +21,22 @@ const DefaultLayout = (props: LayoutProps) => {
         <meta name="twitter:description" content={description} />
         <meta
           name="twitter:image"
-          content="https://agentgpt.reworkd.ai/banner.png"
+          content="/booster_splash.png"
         />
         <meta name="twitter:image:width" content="1280" />
         <meta name="twitter:image:height" content="640" />
         <meta
           property="og:title"
-          content="Booster: Autonomous AI in your browser 🤖"
+          content="Booster: Use Booster's AI Agent to help manage your career."
         />
         <meta
           property="og:description"
-          content="Assemble, configure, and deploy autonomous AI Agents in your browser."
+          content="Use Booster's AI Agent to help manage your career."
         />
-        <meta property="og:url" content="https://agentgpt.reworkd.ai/" />
+        <meta property="og:url" content="/booster_splash.png" />
         <meta
           property="og:image"
-          content="https://agentgpt.reworkd.ai/banner.png"
+          content="/booster_splash.png"
         />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="640" />

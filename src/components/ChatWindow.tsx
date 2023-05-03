@@ -90,7 +90,7 @@ const ChatWindow = ({ messages, children, className }: ChatWindowProps) => {
                 message={{
                   type: "system",
                   value:
-                    "Create your manager by setting its goals and clicking delpoy!",
+                    "Create your manager by setting its goals and clicking deploy!",
                 }}
               />
             </Expand>
