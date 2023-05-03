@@ -12,7 +12,7 @@ import { AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 import { useRouter } from 'next/router';  
-import firebase from '../config/firebaseConfig';
+
 
 
 const Drawer = ({
