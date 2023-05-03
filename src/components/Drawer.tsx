@@ -11,7 +11,8 @@ import FadeOut from "./motions/FadeOut";
 import { AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';  
+import firebase from '../config/firebaseConfig';
 
 
 const Drawer = ({
@@ -102,7 +103,7 @@ const Drawer = ({
             href="https://twitter.com/booster_ai"
             target="_blank"
           />
-          <button onClick={handleLoginClick}>Log In</button>
+          {/*<button onClick={handleLoginClick}>Log In</button>*/}
         </div>
       </div>
     </>
